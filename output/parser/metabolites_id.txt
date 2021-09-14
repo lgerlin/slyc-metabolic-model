@@ -52,6 +52,9 @@ M_3dhq_h_s
 M_q9h2_c_r
 M_q9h2_c_l
 M_q9h2_c_s
+M_q8h2_c_r
+M_q8h2_c_l
+M_q8h2_c_s
 M_hisp_h_r
 M_hisp_h_l
 M_hisp_h_s
@@ -4096,6 +4099,15 @@ M_ga53_c_s
 M_no2_h_r
 M_no2_h_l
 M_no2_h_s
+M_no2_m_r
+M_no2_m_l
+M_no2_m_s
+M_fdxrd_m_r
+M_fdxrd_m_l
+M_fdxrd_m_s
+M_fdxox_m_r
+M_fdxox_m_l
+M_fdxox_m_s
 M_6Shhyoscyamine_c_r
 M_6Shhyoscyamine_c_l
 M_6Shhyoscyamine_c_s

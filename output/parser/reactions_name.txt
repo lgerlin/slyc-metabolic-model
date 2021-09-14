@@ -2890,9 +2890,6 @@ RXN1A0-6314_Cyto_stem
 L-Tryptophan decarboxy-lyase_root
 L-Tryptophan decarboxy-lyase_leaf
 L-Tryptophan decarboxy-lyase_stem
-RXN66-321_Cyto_root
-RXN66-321_Cyto_leaf
-RXN66-321_Cyto_stem
 MAL_H+_rev_Vacu_tx_root
 MAL_H+_rev_Vacu_tx_leaf
 MAL_H+_rev_Vacu_tx_stem
@@ -3271,9 +3268,6 @@ Cycloartenol 24-C-methyltransferase_stem
 4-aminobutyrate transaminase, reversible (mitochondrial)_root
 4-aminobutyrate transaminase, reversible (mitochondrial)_leaf
 4-aminobutyrate transaminase, reversible (mitochondrial)_stem
-RXN-974_Cyto_root
-RXN-974_Cyto_leaf
-RXN-974_Cyto_stem
 RXN-8366_Cyto_root
 RXN-8366_Cyto_leaf
 RXN-8366_Cyto_stem
@@ -3832,6 +3826,9 @@ Ent-kaurene synthase_stem
 Serine--glyoxylate aminotransferase_root
 Serine--glyoxylate aminotransferase_leaf
 Serine--glyoxylate aminotransferase_stem
+Aconitate hydratase_root
+Aconitate hydratase_leaf
+Aconitate hydratase_stem
 ACONITATEHYDR-RXN_Mito_root
 ACONITATEHYDR-RXN_Mito_leaf
 ACONITATEHYDR-RXN_Mito_stem
@@ -6157,6 +6154,9 @@ RXN-9135_Cyto_stem
 Ammonia:ferredoxin oxidoreductase_root
 Ammonia:ferredoxin oxidoreductase_leaf
 Ammonia:ferredoxin oxidoreductase_stem
+Ammonia:ferredoxin oxidoreductase_root
+Ammonia:ferredoxin oxidoreductase_leaf
+Ammonia:ferredoxin oxidoreductase_stem
 RXN-6902_Mito_root
 RXN-6902_Mito_leaf
 RXN-6902_Mito_stem
@@ -6211,9 +6211,6 @@ IMP cyclohydrolase_stem
 RXN-8447_Cyto_root
 RXN-8447_Cyto_leaf
 RXN-8447_Cyto_stem
-RXN66-323_Cyto_root
-RXN66-323_Cyto_leaf
-RXN66-323_Cyto_stem
 Phosphofructokinase_root
 Phosphofructokinase_leaf
 Phosphofructokinase_stem
@@ -6436,9 +6433,6 @@ GLT_Pero_tx_stem
 RXN66-163_Cyto_root
 RXN66-163_Cyto_leaf
 RXN66-163_Cyto_stem
-Histidinol dehydrogenase, chloroplast_root
-Histidinol dehydrogenase, chloroplast_leaf
-Histidinol dehydrogenase, chloroplast_stem
 Mg-protoporphyrin IX monomethyl ester (oxidative) cyclase II_root
 Mg-protoporphyrin IX monomethyl ester (oxidative) cyclase II_leaf
 Mg-protoporphyrin IX monomethyl ester (oxidative) cyclase II_stem

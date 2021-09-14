@@ -58,9 +58,9 @@ x_PHE_stem <-->
 x_ConOL_root <--> 
 x_ConOL_leaf <--> 
 x_ConOL_stem <--> 
-ATPWork_Cyto_root <--> 
-ATPWork_Cyto_leaf <--> 
-ATPWork_Cyto_stem <--> 
+ATPCost_Cyto_root <--> 
+ATPCost_Cyto_leaf <--> 
+ATPCost_Cyto_stem <--> 
 x_TYR_root <--> 
 x_TYR_leaf <--> 
 x_TYR_stem <--> 

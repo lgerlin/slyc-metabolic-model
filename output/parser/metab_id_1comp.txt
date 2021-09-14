@@ -16,6 +16,7 @@ M_biomass_stem_b
 M_iformnetin_c
 M_3dhq_h
 M_q9h2_c
+M_q8h2_c
 M_hisp_h
 M_HC02110_c
 M_5aprbu_c
@@ -1364,6 +1365,9 @@ M_cinnamoyltyramine_c
 M_bppnn_c
 M_ga53_c
 M_no2_h
+M_no2_m
+M_fdxrd_m
+M_fdxox_m
 M_6Shhyoscyamine_c
 M_pqh2_h
 M_1213Sepoxylinolenate_c

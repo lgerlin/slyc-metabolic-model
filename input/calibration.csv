@@ -1,8 +1,14 @@
 calibration;value
-nitrogen;4
+nh4_to_no3_ratio;na
 photosynthesis;7.7
 leaf_relative_weight;3.37
 stem_relative_weight;1.52
 root_relative_weight;1
-xylem_constraint;1
-cost;1.5
+xylem_constraint;0
+cost;0.5
+ATP_maintenance_leaf;170.400
+ATP_maintenance_stem;170.400
+ATP_maintenance_root;170.400
+Leaf_biomass_growth;0.21
+Rubisco_carboxylase_oxygenase_ratio;85
+unit;mM
