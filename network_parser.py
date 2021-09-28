@@ -23,7 +23,7 @@ def save_data(data, name):
 #############################################################################
 
 # SBML file
-filename = 'input/Sl2184.xml'
+filename = 'input/Sl2183.xml'
 
 
 # open calib file and assign values

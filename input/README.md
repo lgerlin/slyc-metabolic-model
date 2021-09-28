@@ -3,7 +3,7 @@
 This repository contains the input files for simulations on VYTOP (Virtual Young TOmato Plant).
 
 
-Sl2184.xml: cell metabolic model of tomato plant, with biomass equation for leaf, stem, root
+Sl2183.xml: cell metabolic model of tomato plant, with biomass equation for leaf, stem, root
 
 
 calibration.csv: file to calibrate different parameters of the model
