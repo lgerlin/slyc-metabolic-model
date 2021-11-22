@@ -219,12 +219,13 @@ if not np.isnan(mnet.ratio_Rubisco_carboxylase_oxygenase):
 #############################################################################
 
 perc_stem = [i for i in np.arange(10, 75.5, 0.05 * 10)]
+#perc_stem = [10]
 
-reac_ids = ['R_RBPCh_s', 'Exch_phl_s_M_sucr_c','R_PSIh_l',
-            'R_PSIh_s','R_PSII_h_s', 'R_PSII_h_l', 'Exch_phl_r_M_sucr_c',
-            'Exch_l_phl_M_sucr_c', 'Exch_s_phl_M_sucr_c']
+reac_ids = ['R_EX_photon_h_s', 'R_RBPCh_s', 'R_PSIh_s', 'R_PSII_h_s', 'Exch_phl_s_M_sucr_c','Exch_s_phl_M_sucr_c',
+            'R_EX_photon_h_l', 'R_RBPCh_l', 'R_PSIh_l', 'R_PSII_h_l', 'Exch_l_phl_M_sucr_c',
+            'Exch_phl_r_M_sucr_c']
 
-reac_fluxes = {'Ratio efficiency leaf:stem': perc_stem, 'Photon uptake': []}
+reac_fluxes = {'Stem weight in the plant': perc_stem, 'Photon uptake': []}
 
 for reac_id in reac_ids:
     reac_fluxes[reac_id] = []
@@ -234,7 +235,7 @@ reac_fluxes['Status Min Photon'] = []
 reac_fluxes['Status Min Sum Fluxes'] = []
 
 reac_fluxes['Stem_root_weight'] = [0.01 * perc * (mnet.LEAF_WEIGHT + mnet.ROOT_WEIGHT) / (1 - 0.01 * perc) for perc in perc_stem]
-reac_fluxes['Stem_root_weight'] = [sw + mnet.LEAF_WEIGHT + mnet.ROOT_WEIGHT for sw in reac_fluxes['Stem_root_weight']]
+reac_fluxes['Plant_weight'] = [sw + mnet.LEAF_WEIGHT + mnet.ROOT_WEIGHT for sw in reac_fluxes['Stem_root_weight']]
 
 PLANT_WEIGHT_initial = mnet.LEAF_WEIGHT + mnet.ROOT_WEIGHT + mnet.STEM_WEIGHT
 
@@ -264,7 +265,7 @@ for perc in perc_stem:
     #update objective function of the LP problem (minimizations of photons import, stem and leaf)
     obj = [0.0] * (len(mnet.reactions_id) + len(mnet.exchangereactions_id))
     obj[num_R_photons_leaf] = float(-1.0 * mnet.LEAF_WEIGHT)
-    obj[num_R_photons_stem] = float(-1.0 * mnet.STEM_WEIGHT)
+    obj[num_R_photons_stem] = float(-1.0 * STEM_WEIGHT)
 
     #############################################################################
 
@@ -295,7 +296,7 @@ for perc in perc_stem:
                 mnet.stoichMat_columns + mnet.exchangestoichMat_columns + addstoichMat_columns,
                 mnet.stoichMat_values + mnet.exchangestoichMat_values + addstoichMat_values))
 
-        #probFBA.write("output/LP/" + "FBATomatoMinPhotons" + "_probFBA.lp")
+        probFBA.write("output/LP/" + "FBATomatoMinPhotonsStemProportion" + "_probFBA.lp")
 
         probFBA.solve()
 
@@ -380,7 +381,7 @@ for perc in perc_stem:
                     mnet.stoichMat_columns + mnet.exchangestoichMat_columns + addstoichMat_columns + minstoichMat_columns,
                     mnet.stoichMat_values + mnet.exchangestoichMat_values + addstoichMat_values + minstoichMat_values))
 
-            #probFBA2.write("output/LP/" + "FBATomatoMinFluxSum" + "_probFBA.lp")
+            probFBA2.write("output/LP/" + "FBATomatoMinFluxSumStemProportion" + "_probFBA.lp")
 
             probFBA2.solve()
 
